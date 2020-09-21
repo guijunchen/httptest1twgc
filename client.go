@@ -51,6 +51,7 @@ func main()  {
 		TLSClientConfig: &tls.Config{
 			RootCAs: pool,
 			Certificates: []tls.Certificate{cliCrt},
+			GMSupport: &tls.GMSupport{},
 		},
 	}
 

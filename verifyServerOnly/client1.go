@@ -25,7 +25,7 @@ func main() {
 	pool.AppendCertsFromPEM(caCrt)
 
 	tr := &http.Transport{
-		TLSClientConfig: &tls.Config{RootCAs: pool},
+		TLSClientConfig: &tls.Config{RootCAs: pool,GMSupport: &tls.GMSupport{}},
 	}
 	client := &http.Client{Transport: tr}
 	resp, err := client.Get("https://localhost:8081")
