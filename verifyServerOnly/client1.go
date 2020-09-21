@@ -14,7 +14,8 @@ import (
 func main() {
 	pool := x509.NewCertPool()
 	//caCart := "../assets/testcryptogen/tlspeer0/ca.crt"
-	caCart := "../assets/susingle-cert/ca.crt"
+	//caCart := "../assets/susingle-cert/ca.crt"
+	caCart := "../assets/tasslcerts/CA.crt"
 
 	caCrt, err := ioutil.ReadFile(caCart)
 	if err != nil {

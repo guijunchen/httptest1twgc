@@ -14,8 +14,11 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	//serverCrt := "../assets/testcryptogen/tlspeer0/server.crt"
 	//serverKey := "../assets/testcryptogen/tlspeer0/server.key"
-	serverCrt := "../assets/susingle-cert/server.crt"
-	serverKey := "../assets/susingle-cert/server.key"
+	//serverCrt := "../assets/susingle-cert/server.crt"
+	//serverKey := "../assets/susingle-cert/server.key"
+	//tassl
+	serverCrt := "../assets/tasslcerts/Server.crt"
+	serverKey := "../assets/tasslcerts/Server.key"
 	http.HandleFunc("/", handler)
 	err := http.ListenAndServeTLS(":8081",
 		serverCrt, serverKey, nil)

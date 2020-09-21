@@ -31,17 +31,17 @@ func main(){
 	//serverCrt := "./assets/server/gmtls/server.crt"
 	//serverKey := "./assets/server/gmtls/server.key"
 	//tassl
-	//caCart := "./assets/tasslcerts/CA.crt"
-	//serverCrt := "./assets/tasslcerts/SS.crt"
-	//serverKey := "./assets/tasslcerts/SS.key"
+	caCart := "./assets/tasslcerts/CA.crt"
+	serverCrt := "./assets/tasslcerts/Server.crt"
+	serverKey := "./assets/tasslcerts/Server.key"
 	//su
 	//caCart := "./assets/sudouble-cert/server_ca.crt"
 	//serverCrt := "./assets/sudouble-cert/server_sign.crt"
 	//serverKey := "./assets/sudouble-cert/server_sign.key"
 	//testcryptogen
-	caCart := "./assets/testcryptogen/tlspeer0/ca.crt"
-	serverCrt := "./assets/testcryptogen/tlspeer0/server.crt"
-	serverKey := "./assets/testcryptogen/tlspeer0/server.key"
+	//caCart := "./assets/testcryptogen/tlspeer0/ca.crt"
+	//serverCrt := "./assets/testcryptogen/tlspeer0/server.crt"
+	//serverKey := "./assets/testcryptogen/tlspeer0/server.key"
 
 
 	caCrt ,err := ioutil.ReadFile(caCart)
